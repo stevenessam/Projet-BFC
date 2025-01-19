@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="https://kit.fontawesome.com/b625fd9d28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+    <div class="container">
+        <section id="grid"> </section>
+        <section id="master">
+            <h2>Master Final</h2>
+            <img src="img/esp32.webp" alt="esp32">
+            <span class="error">Aucune information reçu pour le moment.</span>
+        </section>
+        <section id="irrigation">
+            <h2>Système d'irrigation</h2>
+            <div class="switch_input">
+                <div class="checkbox-wrapper-35">
+                    <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                    <label for="switch">
+                        <span class="switch-x-text">Mode automatique:</span>
+                        <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked:
+                                </span>Désactiver</span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>Activé</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="switch_input disable">
+                <div class="checkbox-wrapper-35">
+                    <input value="private" name="switch-2" id="switch-2" type="checkbox" class="switch">
+                    <label for="switch-2">
+                        <span class="switch-x-text">Système d'irrigation:</span>
+                        <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked:
+                                </span>Désactiver</span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>Activé</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <span><b>Prévision:</b> Aucune pluie en vue</span>
+        </section>
+    </div>
+    <div class="popup">
+        <h2></h2>
+        <span>Humidité: 15%</span>
+    </div>
+</body>
+
+</html>

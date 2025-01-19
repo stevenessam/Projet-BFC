@@ -1,0 +1,183 @@
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #151515;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section[id="grid"],
+section[id="master"],
+section[id="irrigation"] {
+    position: relative;
+    background-color: #fff;
+    border-radius: 1vw;
+    color: #000;
+}
+
+section[id="grid"] {
+    width: 76.5vw;
+    height: 76vh;
+    order: 3;
+    margin-left: 1vw;
+}
+
+section[id="master"] {
+    width: 15vw;
+    height: 36vh;
+    margin-left: 1vw;
+    order: 1;
+}
+
+section[id="irrigation"] {
+    width: 15vw;
+    height: 36vh;
+    margin-left: -15vw;
+    order: 2;
+    align-self: flex-end;
+}
+
+.switch_input {
+    display: block;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.switch_input+.switch_input {
+    margin-top: 3vh;
+}
+
+.switch_input.disable {
+    pointer-events: none;
+    opacity: .4;
+}
+
+section[id="irrigation"] h2 {
+    margin-bottom: 4vh;
+}
+
+section[id="irrigation"]>span {
+    display: block;
+    margin-top: 12vh;
+    width: 90%;
+}
+
+/* section[id="grid"]>div {
+    margin-top: -1vh;
+} */
+
+section[id="grid"]>div>img {
+    height: 12vh;
+    display: block;
+    margin-bottom: -5vh;
+    z-index: 1;
+}
+
+section[id="grid"]>div>img.esp32 {
+    margin-top: 4vh;
+    height: 10vh;
+    margin-bottom: 0;
+}
+
+section[id="grid"]>div>img.sick {
+    filter: sepia(100%);
+}
+
+section[id="master"] img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2vh;
+    width: 8vw;
+}
+
+section[id="master"] span {
+    font-weight: bold;
+}
+
+section>div {
+    position: absolute;
+}
+
+img.disable {
+    filter: contrast(0%);
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    width: 15vw;
+    height: 12vh;
+    background-color: #fff;
+    left: 5px;
+    top: 5px;
+    color: #000;
+    border-radius: .4vw;
+    text-align: center;
+    box-shadow: 0 0 1vw #000;
+    pointer-events: none;
+    text-align: left;
+    padding: 1vh 1vw;
+}
+
+.popup_1 {
+    height: 24vh;
+}
+
+.popup h2 {
+    text-align: center;
+    font-size: 1vw;
+    margin-top: -.2vh;
+}
+
+.popup span {
+    font-size: .7vw;
+}
+
+.vine_state {
+    position: absolute;
+    margin-top: 11vh;
+    margin-left: 1vw;
+}
+
+.error {
+    color: #810d0d;
+}
+
+.success {
+    color: #147e22;
+}
+
+.warning {
+    color: #b3a704;
+}
+
+canvas {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes bounds {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
