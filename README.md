@@ -1,4 +1,14 @@
-# Projet BFC
+# Projet Architecting IoT Systems, Beyond Functional Correctness 2024/2025
+
+
+Cette solution vise à développer un système intelligent et automatisé pour la gestion des vignobles, combinant microcontrôleurs ESP32, capteurs environnementaux, un drone autonome, un système d’irrigation connecté, et une base centrale reliée au cloud. Grâce à des technologies avancées comme l’Edge Computing et un jumeau numérique, ce système optimise l’utilisation des ressources, améliore la surveillance en temps réel et garantit une gestion durable, même dans des zones rurales isolées.
+
+### L'équipe Goat: 
+- Ahmed KAMOUN
+- Steven ESSAM
+- Grégory JEANNIN
+
+
 
 Le projet BFC est composé de quatres sous projet.
 
